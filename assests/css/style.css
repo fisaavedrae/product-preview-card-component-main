@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+
+body {
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: hsl(30, 38%, 92%);
+
+
+}
+
+.container {
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    margin-top: 0px;
+    padding: 0px;
+}
+
+.card {
+    display: flex;
+    flex-flow: column;
+
+    width: 340px;
+    margin-top: 40px;
+    padding: 0px;
+}
+
+
+/* informacion producto */
+.info-producto {
+    background-color: white;
+    padding-top: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    border-radius: 0px 0px 10px 10px;
+    width: 310px;
+}
+
+.imagen-producto {
+    width: 340px;
+    height: 240px;
+    background-repeat: no-repeat;
+    border-radius: 10px 10px 0px 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.imagen-producto .img-mobile {
+    width: 340px;
+    height: 240px;
+    background-repeat: no-repeat;
+    border-radius: 10px 10px 0px 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.img-mobile {
+    visibility: visible;
+    display: block;
+}
+
+.img-desktop {
+    visibility: hidden;
+    display: none;
+}
+
+
+
+.tipo-producto {
+    color: hsl(228, 12%, 60%);
+    font-stretch: ultra-expanded;
+    font-size: 0.9rem;
+    padding-top: 15px;
+}
+
+.nombre-producto {
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    padding-top: 15px;
+}
+
+.descripcion-producto {
+    color: hsl(228, 12%, 60%);
+    font-size: 0.9rem;
+    text-underline-offset: 2px;
+    padding-top: 15px;
+}
+
+.precio {
+    display: flex;
+    flex-flow: row;
+    gap: 20px;
+}
+
+.precio-normal {
+    padding-top: 15px;
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: hsl(161.4, 79.8%, 29%);
+}
+
+.precio-descuento {
+    padding-top: 25px;
+    color: hsl(228, 12%, 60%);
+    text-decoration: line-through;
+
+}
+
+.add-cart {
+    background-color: hsl(161.4, 79.8%, 29%);
+    color: hsl(0, 100%, 100%);
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-align: center;
+    width: 98%;
+    height: 35px;
+
+    border-radius: 10px;
+    padding-top: 10px;
+    margin-top: 15px;
+}
+
+.add-cart:hover {
+    background-color: hsl(161.4, 79.8%, 10%);
+    color: white;
+
+}
+
+/* fin informacion producto */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width:612px) {
+    .card {
+        display: flex;
+        flex-flow: row;
+
+        width: 600px;
+        margin-top: 10%;
+        padding: 0px;
+    }
+
+    .info-producto {
+        background-color: white;
+        padding-top: 0px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        border-radius: 0px 10px 10px 0px;
+        width: 310px;
+    }
+
+    .img-mobile {
+        visibility: hidden;
+        display: none;
+        width: 0px;
+        height: 0px;
+    }
+
+    .img-desktop {
+        visibility: visible;
+        display: block;
+        border-radius: 10px 0px 0px 10px;
+        width: 300px;
+        height: 440px;
+    }
+
+    .imagen-producto {
+        width: 340px;
+        height: 440px;
+        background-repeat: no-repeat;
+
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+    .tipo-producto {
+        color: hsl(228, 12%, 60%);
+        font-stretch: ultra-expanded;
+        font-size: 0.9rem;
+        padding-top: 15px;
+    }
+
+    .nombre-producto {
+        font-family: 'Fraunces', serif;
+        font-size: 2rem;
+        font-weight: 700;
+        padding-top: 25px;
+    }
+
+    .descripcion-producto {
+        color: hsl(228, 12%, 60%);
+        font-size: 0.9rem;
+        text-underline-offset: 2px;
+        padding-top: 25px;
+    }
+
+    .precio {
+        display: flex;
+        flex-flow: row;
+        gap: 20px;
+    }
+
+    .precio-normal {
+        padding-top: 25px;
+        font-family: 'Fraunces', serif;
+        font-size: 2rem;
+        font-weight: 700;
+        color: hsl(161.4, 79.8%, 29%);
+    }
+
+    .precio-descuento {
+        padding-top: 35px;
+        color: hsl(228, 12%, 60%);
+        text-decoration: line-through;
+
+    }
+
+    .add-cart {
+        background-color: hsl(161.4, 79.8%, 29%);
+        color: hsl(0, 100%, 100%);
+        font-size: 0.9rem;
+        font-weight: 700;
+        text-align: center;
+        width: 98%;
+        height: 35px;
+
+        border-radius: 10px;
+        padding-top: 10px;
+        margin-top: 25px;
+    }
+
+}
